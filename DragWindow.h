@@ -10,7 +10,10 @@
 
 
 @interface DragWindow : NSView {
-
+  NSString *filePath;
+  IBOutlet NSButton *hideItButton;
+  IBOutlet NSTextField *textFieldLabel;
 }
-- (void) addLinkToFiles:(NSArray*)array;
+- (void) changePlist;
+- (IBAction) buttonPressed:(id)sender;
 @end
